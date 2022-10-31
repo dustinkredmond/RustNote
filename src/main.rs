@@ -30,7 +30,12 @@ fn main() {
 
     let mut args = std::env::args();
     if args.len() == 2 {
-        create_new_note(&notes_file_path, &args.nth(1).unwrap());
+        let argument = &args.nth(1).unwrap();
+        if argument == "--path" {
+            println!("{}", notes_path.to_str().unwrap());
+        } else {
+            create_new_note(&notes_file_path, argument);
+        }
     } else {
         display_notes(&notes_file_path);
     }
