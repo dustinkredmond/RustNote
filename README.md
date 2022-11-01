@@ -29,3 +29,10 @@ $> rnote
 
 Note files are stored in the user's home directory in a `.notes` subdirectory.
 Notes file names are formatted as such `notes-<date>.txt`.
+
+You can pass the argument `--path` in order to determine where RustNote has chosen to store these files.
+
+```shell
+$> rnote --path
+/home/my_user/.notes
+```
