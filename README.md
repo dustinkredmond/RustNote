@@ -36,3 +36,8 @@ You can pass the argument `--path` in order to determine where RustNote has chos
 $> rnote --path
 /home/my_user/.notes
 ```
+
+## What other features does RustNote implement?
+
+None, really, the aim is to be a dead-simple, opinionated tool to help you take notes.
+Personally, I've found that if a tool is too cumbersome to use, you won't use it. RustNote hopes to help you commit to taking notes by making this process easy. 
